@@ -1,0 +1,41 @@
+/* pages/more/more.wxss */
+.more-list {
+  display: flex;
+  flex-wrap: wrap;
+  height: 1200rpx;
+}
+
+.m-item {
+  width: 200rpx;
+  padding: 25rpx;
+}
+
+.m-img {
+  width: 200rpx;
+  height: 300rpx;
+  border-radius: 10rpx;
+}
+
+.m-name {
+  text-align: center;
+  font-size: 32rpx;
+}
+
+.img-stars {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.img-stars image {
+  width: 28rpx;
+  height: 28rpx;
+  margin-right: 5rpx;
+}
+
+.average, .tips {
+  font-size: 26rpx;
+  color: #333;
+  font-weight: bold;
+  text-align: center;
+}

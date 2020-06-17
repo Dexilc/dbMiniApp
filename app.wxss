@@ -1,0 +1,43 @@
+@font-face {
+  font-family: "iconfont";
+  src: url('./font/iconfont.eot?t=1591957947584');
+  /* IE9 */
+  src: url('./font/iconfont.eot?t=1591957947584#iefix') format('embedded-opentype'),
+    /* IE6-IE8 */
+    url('data:application/x-font-woff2;charset=utf-8;base64,d09GMgABAAAAAAMEAAsAAAAABswAAAK4AAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHEIGVgCDBgqBLIE6ATYCJAMMCwgABCAFhG0HQBsKBsieg3FDX3JyZTHZhMBevijx8LUf+3N3FxNrdK+WGBKRxNCh4V+sRGs/emf61+4lvHn9yxxLrE2l01iI4zH593vIf7kUxrJxBDdN0tZu4KYu2OAq1QBbgPOMOBy3zrtA5gPlMsc4HxMwwSgfa1BkBZKgtwyvdikd1HECjUbFEW3nFFUBZwUZF4gTntMD51xAUdR0vVBbs7SIF1CfHqZjwPPw+/GfJpxJajIydf842wTSflmfmKSrSr7J89mgriJjGVCIo9rEIYlQaRKNCml7fq0ipLnC/xWhwJHV0j88kiBqkdJmMA/JxC8rF6RKhkV33SeDWi9h3EE03WNvjUF3+RleCNy5FF18qTk7qzo/rx69TJ0PQPOjby5Oy9TLy1pu7XXGcg6XocQ3g1S2ldER15ApWbo/XJIs5qN7yRLl+tx4q1Qh8jQ8Syp7N9YQFH8wIFl7mwaAC9rbjBXrKReyuDIy8QRmPtorBzoAlZKj9BOmTo/Z46/+xsuLqxmtV9K3s1sBP11aNrCvUgr6FVMv0Vv4D4U9W4ojJsZcLAEXeK5sdqQtgXmaWwXxdHoYr+m5z1So15MiqTOCrN40oVCWUaPJKmrVW0OjJbmrm3ShJKI0YFE/Qmi3jKTVZ2TtTgiFco8avZ5Rqz0kaHQQfls2mQ3eNZMiPUMmaGiGvJHYMTMz16i8AnH1Vj3NikN6DaIOPgzVClUxnYvsiM4xw9HAaRjDEFNigznoNGS1EihQUoeMTGFmTEhQKnHdmxRGYgOutlCIHoOYQAbNIJ4RYYf97oxr6fMVEE49Kz3aUtHmrIFQDnzvkJqCqgchV2HvVXEvrzg04GgwDAZhFGED5aBBiJUVAQn1g+ogRoyCeURMkEBJO+G+CsX6KtsH5Ks1kBk5UuQoyjkhNq+rnxNPec7M4vWUkkYAAA==') format('woff2'),
+    url('./font/iconfont.woff?t=1591957947584') format('woff'),
+    url('./font/iconfont.ttf?t=1591957947584') format('truetype'),
+    /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+    url('./font/iconfont.svg?t=1591957947584#iconfont') format('svg');
+  /* iOS 4.1- */
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-zoom:before {
+  content: "\e674";
+}
+
+.icon-ico-right-arrow:before {
+  content: "\e66c";
+}
+
+.ovrhidden {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* 隐藏scroll滚动条 */
+::-webkit-scrollbar {
+  display: none;
+  width: 0;
+  height: 0;
+  color: transparent;
+}

@@ -1,0 +1,77 @@
+/* pages/detail/detail.wxss */
+.details {
+  display: flex;
+  padding: 20rpx;
+}
+
+.mImg {
+  width: 230rpx;
+  height: 330rpx;
+}
+
+.dtl-right {
+  padding-left: 10rpx;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.mName {
+  font-size: 45rpx;
+  font-weight: bold;
+  color: #333;
+}
+
+.mTag {
+  font-size: 28rpx;
+  color: #bbb;
+}
+
+.dbrate {
+  font-size: 32rpx;
+  font-weight: bold;
+  color: #333;
+  display: flex;
+}
+
+.average {
+  color: #999;
+  margin-left: 10rpx;
+}
+
+.main {
+  padding: 20rpx;
+}
+
+.title {
+  font-size: 42rpx;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20rpx;
+}
+
+.content {
+  font-size: 28rpx;
+}
+
+.pson-list {
+  display: flex;
+}
+
+.pson-item {
+  /*width: 200rpx;*/
+  padding-right: 10rpx;
+}
+
+.psonImg {
+  border-radius: 10rpx;
+  width: 200rpx;
+  height: 300rpx;
+}
+
+.pson-name {
+  color: #333;
+  font-size: 28rpx;
+  text-align: center;
+  white-space: nowrap;
+}

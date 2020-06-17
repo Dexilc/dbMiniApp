@@ -1,0 +1,31 @@
+<view class="header-search">
+  <view class="search-main" bind:tap="toSearch">
+    <text class="iconfont icon-zoom"></text>搜索
+  </view>
+</view>
+<view class="container">
+  <view class="list" wx:for="{{list}}" wx:key="index">
+    <view class="list-header">
+      <view class="header-title">{{item.title}}</view>
+      <view class="header-more" bind:tap="viewMore" id="{{index}}">查看更多<text class="iconfont icon-ico-right-arrow"></text>
+      </view>
+    </view>
+    <scroll-view scroll-x='true'>
+      <view class="list-img">
+        <view class="img-item" wx:for="{{item.movies}}" wx:for-item="item" data-id="{{item.id}}" wx:key="index" bind:tap="detail">
+          <image class="item-logo" src="{{item.images.large}}" mode="scaleToFill"></image>
+          <view class="item-name ovrhidden">{{item.title}}</view>
+          <block wx:if="{{item.stars}}">
+            <view class="img-stars">
+              <stars movie="{{item}}"></stars>
+              <text class="average">{{item.rating.average}}</text>
+            </view>
+          </block>
+          <block wx:else>
+            <view class="tips">暂无评分</view>
+          </block>
+        </view>
+      </view>
+    </scroll-view>
+  </view>
+</view>

@@ -1,0 +1,72 @@
+/* pages/search/search.wxss */
+.search {
+  background-color: #42bd56;
+  padding: 20rpx 30rpx;
+}
+
+.search-content {
+  display: flex;
+  background-color: #fff;
+  border-radius: 10rpx;
+  padding: 6rpx;
+}
+
+.search-content view {
+  line-height: 60rpx;
+  padding-left: 10rpx;
+}
+
+.search-content input {
+  height: 60rpx;
+  padding-left: 10rpx;
+  color: #ccc;
+  font-size: 28rpx;
+}
+
+.search-list {
+  padding: 10rpx;
+}
+
+.s-item {
+  display: flex;
+  margin-bottom: 10rpx;
+  border-radius: 10rpx;
+  background-color: #eee;
+}
+
+.mImg {
+  width: 230rpx;
+  height: 330rpx;
+  border-radius: 10rpx;
+}
+
+.dtl-right {
+  padding-left: 10rpx;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.mName {
+  font-size: 45rpx;
+  font-weight: bold;
+  color: #333;
+}
+
+.mTag {
+  font-size: 28rpx;
+  color: #bbb;
+}
+
+.dbrate {
+  margin-top: 20rpx;
+  font-size: 32rpx;
+  font-weight: bold;
+  color: #333;
+  display: flex;
+}
+
+.average {
+  color: #999;
+  margin-left: 10rpx;
+}

@@ -1,0 +1,23 @@
+<!--pages/search/search.wxml-->
+<view class="search">
+  <view class="search-content">
+    <view class="iconfont icon-zoom"></view>
+    <input placeholder="搜索" bindinput="inputValue"></input>
+  </view>
+</view>
+<view class="search-list">
+  <view class="s-item" wx:for="{{searchList}}" wx:key="index" data-id="{{item.id}}" bind:tap="detail">
+    <image class="mImg" src="{{item.cover}}" mode="scaleToFill"></image>
+    <view class="dtl-right">
+      <view class="mName ovrhidden">{{item.title}}</view>
+      <block wx:if="{{item.rate}}">
+        <view class="dbrate">评分<view class="average">{{item.rate}}</view>
+        </view>
+      </block>
+      <block wx:else>
+        <view class="dbrate">暂无评分<view class="average">{{item.rate}}</view>
+        </view>
+      </block>
+    </view>
+  </view>
+</view>

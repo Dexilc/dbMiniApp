@@ -1,0 +1,6 @@
+{
+    "usingComponents":
+    {
+        "stars": "/cmps/stars/stars"
+    }
+}

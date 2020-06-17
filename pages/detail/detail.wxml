@@ -1,0 +1,31 @@
+<!--pages/detail/detail.wxml-->
+<view class="details">
+  <view class="movieImg">
+    <image class="mImg" src="{{image}}" mode="scaleToFill"></image>
+  </view>
+  <view class="dtl-right">
+    <view class="mName ovrhidden">{{title}}</view>
+    <view class="mTag">
+      <text class="" wx:for="{{movie_type}}" wx:key="index">{{item}}/</text>
+      <text class="" wx:for="{{country}}" wx:key="index">{{item}}/</text>
+      <text>{{year}}年上映</text>
+    </view>
+    <view class="dbrate">评分<view class="average">{{rating.average}}</view>
+    </view>
+  </view>
+</view>
+<view class="main">
+  <view class="title">简介</view>
+  <view class="content">{{summary}}</view>
+</view>
+<view class="main">
+  <view class="title">影人</view>
+  <scroll-view scroll-x="true">
+    <view class="pson-list">
+      <view class="pson-item" wx:for="{{cast}}" wx:key="index">
+        <!-- <image class="psonImg" src="/img/bmh1.png" mode="scaleToFill"></image> -->
+        <view class="pson-name ovrhidden">{{item}}/</view>
+      </view>
+    </view>
+  </scroll-view>
+</view>

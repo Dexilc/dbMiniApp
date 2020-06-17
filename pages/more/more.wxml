@@ -1,0 +1,20 @@
+<!--pages/more/more.wxml-->
+<scroll-view scroll-y='true' bindscrolltolower="loadMore">
+  <view class="more">
+    <view class="more-list">
+      <view class="m-item" wx:for="{{movies}}" wx:key="index" bind:tap="detail" data-id="{{item.id}}">
+        <image class="m-img" src="{{item.images.large}}" mode="scaleToFill"></image>
+        <view class="m-name ovrhidden">{{item.title}}</view>
+        <block wx:if="{{item.stars}}">
+          <view class="img-stars">
+            <stars movie="{{item}}"></stars>
+            <text class="average">{{item.rating.average}}</text>
+          </view>
+        </block>
+        <block wx:else>
+          <view class="tips">暂无评分</view>
+        </block>
+      </view>
+    </view>
+  </view>
+</scroll-view>

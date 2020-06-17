@@ -1,0 +1,12 @@
+<!--cmps/stars/stars.wxml-->
+<view class="stars">
+  <block wx:for="{{movie.stars.on}}" wx:key="index">
+    <image class="star" src="/img/star_fill_whole.png" mode="scaleToFill"></image>
+  </block>
+  <block wx:for="{{movie.stars.half}}" wx:key="index">
+    <image class="star" src="/img/star_fill_half.png" mode="scaleToFill"></image>
+  </block>
+  <block wx:for="{{movie.stars.off}}" wx:key="index">
+    <image class="star" src="/img/star_fill_none.png" mode="scaleToFill"></image>
+  </block>
+</view>
